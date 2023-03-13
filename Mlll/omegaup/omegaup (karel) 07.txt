@@ -1,0 +1,50 @@
+class program {
+define putbeepers(i){
+iterate(i){
+putbeeper();
+}
+}
+define turnringht(){
+turnleft();
+turnleft();
+turnleft();
+}
+    program () {
+      iterate(5){
+      move();
+      putbeepers(3);
+      }
+      turnringht();
+      iterate(2){
+      iterate(4){
+      move();
+      putbeepers(3);
+      }
+      turnringht();
+      
+      }
+      iterate(3){
+      move();
+      putbeepers(3);
+      }
+      turnringht();
+      iterate(3){
+      move();
+      putbeepers(2);
+      }
+      turnringht();
+      iterate(2){
+      iterate(2){
+      move();
+      putbeepers(2);
+      }
+      turnringht();
+      }
+      move();
+      putbeepers(2);
+      turnringht();
+      move();
+      putbeepers(1);
+        turnoff();
+    }
+}

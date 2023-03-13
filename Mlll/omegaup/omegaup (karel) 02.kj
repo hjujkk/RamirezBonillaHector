@@ -1,0 +1,35 @@
+class program {
+define go(){
+iterate(3){
+putbeeper();
+move();
+}
+}
+define derecha(){
+putbeeper();
+iterate(3){
+turnleft();
+}
+move();
+iterate(3){
+turnleft();
+}
+}
+define izquierda(){
+putbeeper();
+turnleft();
+move();
+turnleft();
+}
+    program () {
+    iterate(2){
+    go();
+    derecha();
+    go();
+    izquierda();
+    }
+    go();
+    putbeeper();
+        turnoff();
+    }
+}

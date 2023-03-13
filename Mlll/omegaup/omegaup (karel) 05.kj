@@ -1,0 +1,11 @@
+class program {
+define go(i){
+iterate(i){
+move();
+}
+}
+    program () {
+    go(10);
+        turnoff();
+    }
+}
